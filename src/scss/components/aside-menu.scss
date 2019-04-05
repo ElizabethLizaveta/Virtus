@@ -1,0 +1,28 @@
+.aside-menu {
+  width: 96px;
+  background: #2f3242;
+  height: 100%;
+  position: absolute;
+  left: 0;
+
+  .navigation {
+    li {
+      text-align: center;
+
+      &.active-state {
+        a {
+            opacity: 1;
+          }
+      }
+
+      a {
+        font-size: 30px;
+        color: #fff;
+        opacity: 0.3;
+      }
+    }
+    li + li {
+      margin-top: 76px;
+    }
+  }
+}

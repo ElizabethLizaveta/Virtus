@@ -1,0 +1,57 @@
+.header-main {
+  padding: 20px 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f3242;
+
+  .logo {
+    opacity: 0.28;
+  }
+
+  .option-box {
+    display: flex;
+    justify-content: space-between;
+
+    li + li {
+        margin-left: 47px;
+        display: flex;
+        align-items: center;
+    }
+  }
+
+  .add-button {
+    padding: 12px 18px 12px 36px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    border: 1px solid #2196f3;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+
+    i {
+      font-size: 25px;
+      color: #2196f3;
+      bottom: 15px;
+      margin-left: 20px;
+    }
+  }
+
+  .search-button,
+  .notify-button {
+    color: #fff;
+    font-size: 35px;
+  }
+
+  .user {
+      display: flex;
+      align-items: center;
+
+      .switch-button {
+        color: #fff;
+        font-size: 20px;
+        margin-left: 9px;
+      }
+  }
+}
