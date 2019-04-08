@@ -4,6 +4,8 @@
   height: calc(100vh - 96px);
   position: absolute;
   left: 0;
+  z-index: 2;
+  box-shadow: 3px 0 80px rgba(0,0,0,.2);
 
   @include media("<desktop") {
     position: relative;

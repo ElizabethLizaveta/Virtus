@@ -1,0 +1,13 @@
+.project-board {
+    margin-left: 90px;
+    background: #2b2d3c;
+    min-height: calc(100vh - 194px);
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.board-inner {
+    width: 5000px; 
+    display: flex;
+    padding: 53px 57px;
+}
