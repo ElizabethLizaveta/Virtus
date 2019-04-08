@@ -11,7 +11,7 @@
 
   .logo-wrap {
     @include media("<tablet") {
-      max-width: 110px;
+      max-width: 105px;
     }
   }
 
@@ -25,7 +25,7 @@
       align-items: center;
 
       @include media("<tablet") {
-        margin-left: 20px;
+        margin-left: 15px;
       }
     }
 
@@ -88,6 +88,26 @@
 
     @include media("<tablet") {
       font-size: 30px;
+    }
+  }
+
+  .notify-button {
+    position: relative;
+
+    &.notify {
+      :after {
+        display: block;
+        content: "";
+        height: 15px;
+        width: 15px;
+        background-color: #2196f3;
+        border: 2px solid #2f3242;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 2px;
+        opacity: 1;
+      }
     }
   }
 
