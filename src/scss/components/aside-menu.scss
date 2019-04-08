@@ -5,13 +5,51 @@
   position: absolute;
   left: 0;
 
+  @include media("<desktop") {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    background: #393d50;
+  }
+
   .navigation {
+    @include media("<desktop") {
+      display: flex;
+      justify-content: space-between;
+    }
+
     li {
       text-align: center;
 
       &.active-state {
         i {
           opacity: 1;
+        }
+      }
+
+      &.search {
+        display: none;
+
+        @include media("<desktop") {
+          display: block;
+        }
+
+        .search-field {
+          display: none;
+          padding: 8px 18px;
+          width: calc(100vw - 100px);
+          background: #2f3243;
+          border: 1px solid #fff;
+          border-radius: 50px;
+          color: #fff;
+          margin-right: 10px;
+          position: absolute;
+          right: 75px;
+      
+          &.is-visible {
+            display: block;
+          }
         }
       }
 
@@ -44,6 +82,10 @@
 
     li + li {
       margin-top: 57px;
+
+      @include media("<desktop") {
+        margin-top: 0;
+      }
     }
   }
 }

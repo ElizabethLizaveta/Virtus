@@ -18,12 +18,9 @@ textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   box-sizing: border-box;
-  border: 1px solid map-get($forms, 'form-element-border-color');
-  padding: map-get($forms, 'form-element-padding');
-  font-family: map-get($forms, 'form-font-family');
 
   &:focus {
-    border-color: map-get($forms, 'form-element-focus-border-color');
+    outline: none;
   }
 
   @include placeholder {
