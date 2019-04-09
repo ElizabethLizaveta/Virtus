@@ -1,0 +1,89 @@
+.project-card {
+  background: #3a3e52;
+  max-width: 290px;
+  padding: 23px 24px;
+  color: #9ea3b4;
+  font-size: 14px;
+  position: relative;
+  display: flex;
+  margin: 23px 0;
+  border-radius: 5px;
+
+  .img-wrap {
+    margin-right: 24px;
+  }
+
+  .h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .project-mail {
+    margin-right: 30px;
+    position: relative;
+
+    &:after {
+      display: block;
+      content: "";
+      height: 5px;
+      width: 5px;
+      background-color: #9ea3b4;
+      border-radius: 50%;
+      position: absolute;
+      top: 7px;
+      right: -21px;
+    }
+  }
+
+  .project-menu {
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    .dot {
+      display: block;
+      content: "";
+      height: 5px;
+      width: 5px;
+      background-color: #9ea3b4;
+      border-radius: 50%;
+      position: relative;
+
+      &:before,
+      &:after {
+        display: block;
+        content: "";
+        height: 5px;
+        width: 5px;
+        background-color: #9ea3b4;
+        border-radius: 50%;
+        position: absolute;
+      }
+
+      &:before {
+        top: 7px;
+      }
+
+      &:after {
+        bottom: 7px;
+      }
+    }
+  }
+}
+
+.ui-sortable-handle:hover {
+    .project-card {
+        box-shadow: 3px 0 50px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.sortable-placeholder {
+  min-height: 92px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px dashed #9ea3b4;
+}

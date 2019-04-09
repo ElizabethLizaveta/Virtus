@@ -1,18 +1,23 @@
 .aside-menu {
   padding: 30px;
   background: #2f3242;
-  height: calc(100vh - 96px);
-  position: absolute;
+  height: 100%;
+  position: fixed;
   left: 0;
-  z-index: 2;
-  box-shadow: 3px 0 80px rgba(0,0,0,.2);
+  top: 96px;
+  z-index: 3;
+  box-shadow: 3px 0 80px rgba(0, 0, 0, 0.2);
 
   @include media("<desktop") {
-    position: relative;
+    top: 80px;
     width: 100%;
     height: auto;
     padding: 15px;
     background: #393d50;
+  }
+
+  @include media("<tablet") {
+    top: 63px;
   }
 
   .navigation {
@@ -23,6 +28,13 @@
 
     li {
       text-align: center;
+
+      &:hover,
+      &:focus {
+        i {
+          opacity: 1;
+        }
+      }
 
       &.active-state {
         i {
@@ -48,7 +60,7 @@
           margin-right: 10px;
           position: absolute;
           right: 75px;
-      
+
           &.is-visible {
             display: block;
           }

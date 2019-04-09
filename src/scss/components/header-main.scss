@@ -1,9 +1,12 @@
 .header-main {
+  position: fixed;
+  width: 100%;
   padding: 20px 21px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #2f3243;
+  z-index: 3;
 
   @include media("<desktop") {
     padding: 12px 15px;
@@ -35,7 +38,7 @@
       @include media("<desktop") {
         display: none;
       }
-    }  
+    }
   }
 
   .add-button {
@@ -47,6 +50,11 @@
     border-radius: 50px;
     display: flex;
     align-items: center;
+
+    &:hover,
+    &:focus {
+      border: 1px solid rgba(#2196f3, 0.5);
+    }
 
     @include media("<tablet") {
       padding: 6px 10px 6px 15px;
@@ -86,6 +94,11 @@
     color: #fff;
     font-size: 35px;
 
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
     @include media("<tablet") {
       font-size: 30px;
     }
@@ -117,14 +130,19 @@
 
     img {
       @include media("<tablet") {
-      max-width: 40px;
+        max-width: 40px;
       }
     }
-    
+
     .switch-button {
       color: #fff;
       font-size: 20px;
       margin-left: 9px;
+
+      &:hover,
+      &:focus {
+        opacity: 0.5;
+      }
     }
   }
 }

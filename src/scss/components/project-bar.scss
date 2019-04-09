@@ -1,11 +1,21 @@
-.project-bar {
-  padding: 29px 28px 29px 158px;
+.project-bar { 
+  position: fixed;
+  top: 96px;
+  width: 100%;
+  padding: 29px 23px 29px 158px;
   display: flex;
   justify-content: space-between;
   background: #237fcb;
+  z-index: 2;
 
   @include media("<desktop") {
     padding: 15px;
+    top: 147px;
+  }
+
+  @include media("<tablet") {
+    padding: 15px;
+    top: 124px;
   }
 
   .title-box {
@@ -18,7 +28,7 @@
 
       &:nth-child(2) {
         color: #fff;
-        margin-left: 40px;
+        margin-left: 47px;
 
         @include media("<tablet") {
           display: none;
@@ -27,14 +37,14 @@
     }
   }
 
-  .project-sort {
+  .projects-sort {
     display: flex;
     align-items: center;
 
     .h3 {
       font-size: 16px;
       color: #fff;
-      margin-right: 30px;
+      margin-right: 35px;
       margin-bottom: 0;
 
       @include media("<tablet") {
