@@ -1,46 +1,50 @@
 .project-board {
-    margin: 245px 0 30px 160px;
-    background: #2b2d3c;
-    overflow: visible;
-    height: 100vh;
+  margin: 245px 0 30px 160px;
+  background: #2b2d3c;
+  overflow: visible;
+  height: calc(100vh - 275px);
 
-    @include media("<desktop") {
-        margin: 250px 15px 30px;
-    }
+  @include media("<desktop") {
+    margin: 250px 15px 30px;
+    height: calc(100vh - 280px);
+  }
 
-    @include media("<tablet") {
-        margin: 220px 15px 30px;
-    }
+  @include media("<tablet") {
+    margin: 220px 15px 30px;
+    height: calc(100vh - 230px);
+  }
 }
 
 .board-inner {
-    width: 14000px; 
-    display: flex;
-    overflow: auto;
+  min-width: 1950px;
+  display: flex;
+  overflow: auto;
 }
 
 .project-sort {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .ui-sortable {
-    min-height: 94px;
+  min-height: 94px;
 }
 
-.visible-scrollbar, .invisible-scrollbar, .customized-scrollbar {
-    display: block;
-    overflow: auto;  
-  }
+.visible-scrollbar,
+.invisible-scrollbar,
+.customized-scrollbar {
+  display: block;
+  overflow: auto;
+}
 
-  .customized-scrollbar::-webkit-scrollbar {
-    height: 14px;
-    border-radius: 10px;
-    background-color: #4e5160; 
-  }
-  
-  .customized-scrollbar::-webkit-scrollbar-thumb {
-      background: #2196f3; 
-      -webkit-width: 5px;
-      width: 5px;
-      border-radius: 10px;
-  }
+.customized-scrollbar::-webkit-scrollbar {
+  height: 14px;
+  border-radius: 10px;
+  background-color: #4e5160;
+}
+
+.customized-scrollbar::-webkit-scrollbar-thumb {
+  background: #2196f3;
+  -webkit-width: 5px;
+  width: 5px;
+  border-radius: 10px;
+}

@@ -4,11 +4,13 @@
 // Feel free with using ES6 here.
 import headerSearch from './modules/header-search';
 import projectSort from './modules/project-sort';
+import chartBar from './modules/chartbar';
 
 (($) => {
   // When DOM is ready
   $(() => {
     headerSearch.init();
     projectSort.init();
+    chartBar.init();
   });
 })(jQuery);

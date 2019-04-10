@@ -1,0 +1,14 @@
+.content-board {
+  margin: 160px 15px 0 160px;
+  background: #2b2d3c;
+  overflow: visible;
+  height: 100vh;
+
+  @include media("<desktop") {
+    margin: 200px 15px 0;
+  }
+
+  @include media("<tablet") {
+    margin: 170px 15px 0;
+  }
+}
