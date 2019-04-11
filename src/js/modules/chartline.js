@@ -1,8 +1,8 @@
 import Chart from 'chart.js';
 
-const chartBar = (($) => {
+const chartLine = (($) => {
   function chartInit() {
-    const speedCanvas = $('.chart-statistic');
+    const speedCanvas = $('.chartline');
 
     Chart.defaults.global.defaultFontFamily = 'Montserrat';
     Chart.defaults.global.defaultFontSize = 16;
@@ -48,4 +48,4 @@ const chartBar = (($) => {
   return { init };
 })(jQuery);
 
-export default chartBar;
+export default chartLine;

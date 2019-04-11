@@ -1,11 +1,11 @@
-.chartbar-field {
+.chartline-field {
   background: #2f3242;
   max-width: 1255px;
   overflow: hidden;
   position: relative;
 }
 
-.chartbar-holder {
+.chartline-holder {
   background: #2f3242;
   overflow: hidden;
   width: calc(100% + 100px) !important;
@@ -13,7 +13,7 @@
   margin-top: 140px;
 }
 
-.chart-statistic {
+.chartline {
   width: calc(100% + 100px) !important;
   margin-left: -120px;
 
