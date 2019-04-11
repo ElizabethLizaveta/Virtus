@@ -6,4 +6,5 @@ module.exports = [
   './node_modules/jquery/dist/jquery.js',
   './node_modules/jquery-ui-dist/jquery-ui.min.js',
   './node_modules/chart.js/dist/Chart.min.js',
+  './node_modules/jquery-circle-progress/dist/circle-progress.js',
 ];
