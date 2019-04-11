@@ -89,4 +89,9 @@
   .chartbar {
     width: calc(100% + 100px) !important;
     margin-left: -90px;
+
+    @include media("<tablet") {
+        width: calc(100% + 50px) !important;
+        margin-left: -70px;
+    }
   }

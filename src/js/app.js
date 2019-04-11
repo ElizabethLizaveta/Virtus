@@ -5,6 +5,7 @@
 import headerSearch from './modules/header-search';
 import projectSort from './modules/project-sort';
 import chart from './modules/chart';
+import circleProgress from './modules/circle-progress';
 
 (($) => {
   // When DOM is ready
@@ -12,5 +13,6 @@ import chart from './modules/chart';
     headerSearch.init();
     projectSort.init();
     chart.init();
+    circleProgress.init();
   });
 })(jQuery);
