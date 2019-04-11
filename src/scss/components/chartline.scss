@@ -10,7 +10,7 @@
   overflow: hidden;
   width: calc(100% + 100px) !important;
   margin-right: -50px;
-  margin-top: 140px;
+  margin-top: 170px;
 }
 
 .chartline {
@@ -30,6 +30,7 @@
   left: 35px;
   display: flex;
   color: #2196f3;
+  z-index: 1;
 
   @include media("<tablet") {
     top: 5px;
