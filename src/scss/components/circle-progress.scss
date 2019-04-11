@@ -6,6 +6,10 @@
     vertical-align: top;
     margin-right: 26px;
 
+    @include media("<tablet") {
+        margin-right: 0;
+    }
+
     canvas {
         width: 79px!important;
         height: 79px!important;

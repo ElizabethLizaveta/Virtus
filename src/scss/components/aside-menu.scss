@@ -61,6 +61,11 @@
           position: absolute;
           right: 75px;
 
+          @include media("<tablet") {
+            width: calc(100vw - 80px);
+            right: 55px;
+          }
+
           &.is-visible {
             display: block;
           }

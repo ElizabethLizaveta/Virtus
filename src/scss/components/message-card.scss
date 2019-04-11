@@ -1,0 +1,55 @@
+.message-card {
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    background: #2f3242;
+
+    .img-wrap {
+        margin-right: 20px;
+        min-width: 45px;
+
+        img {
+            border-radius: 50%;
+          }
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        &:hover,
+        &:focus {
+            .h3 {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 18px;
+    }
+
+    .time {
+        font-size: 16px;
+        color: #9ca1b2;
+        
+        &.unread {
+            color: #2196f3;
+        }
+    }
+
+    .text-content {
+        font-size: 14px;
+        color: #9ca1b2;
+        line-height: 28px;
+    } 
+}
+
+.message-card + .message-card {
+    border-top: 1px solid #505464;
+}

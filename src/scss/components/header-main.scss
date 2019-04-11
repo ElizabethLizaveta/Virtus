@@ -24,6 +24,7 @@
   .option-box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     li + li {
       margin-left: 47px;
@@ -45,7 +46,7 @@
   }
 
   .add-button {
-    padding: 12px 18px 12px 36px;
+    padding: 12px 67px 12px 36px;
     font-size: 18px;
     letter-spacing: 0.02em;
     color: #fff;
@@ -53,6 +54,7 @@
     border-radius: 50px;
     display: flex;
     align-items: center;
+    position: relative;
 
     &:hover,
     &:focus {
@@ -60,18 +62,27 @@
     }
 
     @include media("<tablet") {
-      padding: 6px 7px 6px 10px;
+      padding: 0;
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+
     }
 
     i {
       font-size: 25px;
+      line-height: 1;
       color: #2196f3;
-      bottom: 15px;
-      margin-left: 20px;
+      text-indent: 0;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
 
       @include media("<tablet") {
         font-size: 20px;
-        margin-left: 10px;
+        margin-left: 0;
+        right: 4px;
       }
     }
   }
@@ -132,6 +143,8 @@
     align-items: center;
 
     img {
+      border-radius: 50%;
+
       @include media("<tablet") {
         max-width: 40px;
       }

@@ -1,6 +1,6 @@
 .chartbar-field {
     background: #2f3242;
-    max-width: 780px;
+    width: 62%;
     overflow: hidden;
     position: relative;
     padding: 26px 34px 23px 34px;
@@ -12,10 +12,12 @@
     .text-holder {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         margin-bottom: 53px;
 
         .h2 {
             font-size: 24px;
+            font-weight: 700;
             color: #fff;
 
             @include media("<tablet") {

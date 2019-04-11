@@ -1,0 +1,22 @@
+.inbox {
+    background: #3a3e52;
+    width: 36.5%;
+    max-height: 400px;
+    overflow: auto;
+
+    .header-wrap {
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    .h2 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        span {
+            color: #2196f3;
+        }
+    }
+}
