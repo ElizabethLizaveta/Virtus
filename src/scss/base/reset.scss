@@ -47,4 +47,5 @@ button {
   background: none;
   padding: 0;
   cursor: pointer; 
+  font-family: map-get($base, 'base-font-family');
 }

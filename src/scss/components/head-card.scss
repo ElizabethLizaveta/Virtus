@@ -7,20 +7,21 @@
     .h2 {
       color: #fff;
       font-size: 18px;
-      margin-bottom: 5px;
+      margin-bottom: 3px;
     }
   
     i {
         position: absolute;
         color: #9ea3b4;
         font-size: 25px;
-        right: 0;
+        right: 20px;
         top: 50%;
         transform: translateY(-50%);
     }
   
     .project-info {
-      font-size: 16px;
+      font-size: 14px;
+      letter-spacing: 0.02em;
       display: flex;
   
       .project-amount {
@@ -31,8 +32,8 @@
         &:after {
           display: block;
           content: "";
-          height: 5px;
-          width: 5px;
+          height: 4px;
+          width: 4px;
           background-color: #9ea3b4;
           border-radius: 50%;
           position: absolute;

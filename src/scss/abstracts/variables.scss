@@ -31,7 +31,7 @@ $base: (
 
 // Vars for forms
 $forms: (
-  'form-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  'base-font-family': unquote("'Montserrat', sans-serif"),
   'form-element-padding': unquote("0.4em 0.7em"),
   'form-element-border-color': #999,
   'form-element-focus-border-color': #000,

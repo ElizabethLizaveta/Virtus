@@ -11,13 +11,21 @@ const chart = (($) => {
     const speedData = {
       labels: ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'],
       datasets: [{
-        data: [0, 16, 10, 14, 7, 19, 12],
+        data: [0, 16, 10, 13, 6, 19, 6],
         backgroundColor: '#2d4361',
         borderColor: '#2196f3',
+        pointBackgroundColor: '#2d4361',
+        pointBorderColor: '#2196f3',
+        pointHoverBackgroundColor: '#fff',
+        pointRadius: 5,
+        pointBorderWidth: 2,
+        pointHoverRadius: 10,
+        pointHoverBorderWidth: 3,
       }],
     };
 
     const chartOptions = {
+      maintainAspectRatio: false,
       legend: {
         display: false,
       },
@@ -28,10 +36,25 @@ const chart = (($) => {
           },
         }],
         xAxes: [{
+          offset: true,
           gridLines: {
             color: '#505464',
           },
+          ticks: {
+            min: 'MON',
+            max: 'FRI',
+          },
+          gridLines: {
+            offsetGridLines: 'true',
+            color: '#454858',
+          },
         }],
+      },
+      layout: {
+        padding: {
+          top: 180,
+          bottom: 0,
+        },
       },
     };
 

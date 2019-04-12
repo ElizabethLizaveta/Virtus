@@ -3,11 +3,11 @@ const circleProgress = (($) => {
   function circleRun() {
     const progressBarOptions = {
       startAngle: -1.55,
-      size: 200,
+      size: 76,
       value: 0.75,
-      fill: {
-        color: '#ffa500',
-      },
+      fill: '#ffa500',
+      emptyFill: '#505464',
+      thickness: 4,
     };
 
     $('.circle').circleProgress(progressBarOptions).on('circle-animation-progress', (_event, progress, stepValue) => {

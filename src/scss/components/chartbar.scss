@@ -3,7 +3,7 @@
     width: 62%;
     overflow: hidden;
     position: relative;
-    padding: 26px 34px 23px 34px;
+    padding: 30px 30px 23px 29px;
 
     @include media("<tablet") {
         padding: 26px 15px 23px 15px;
@@ -13,12 +13,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 53px;
+        margin-bottom: 62px;
 
         .h2 {
             font-size: 24px;
             font-weight: 700;
             color: #fff;
+            margin-bottom: 0;
 
             @include media("<tablet") {
                 font-size: 18px;
@@ -42,8 +43,8 @@
             }
 
             .styled-select {
-                height: 34px;
-                width: 152px;
+                height: 37px;
+                width: 158px;
                 border: 1px solid #515464;
                 border-radius: 50px;
                 position: relative;

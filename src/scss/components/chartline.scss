@@ -9,18 +9,14 @@
 .chartline-holder {
   background: #2f3242;
   overflow: hidden;
-  width: calc(100% + 100px) !important;
-  margin-right: -50px;
-  margin-top: 170px;
 }
 
 .chartline {
-  width: calc(100% + 100px) !important;
-  margin-left: -120px;
+  width: calc(100% + 60px) !important;
+  margin-left: -60px;
 
   @include media("<tablet") {
-    width: calc(100% + 10px) !important;
-    margin-left: -60px;
-    height: 250px!important;
+    height: 300px!important;
+    margin-left: -45px;
   }
 }

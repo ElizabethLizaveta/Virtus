@@ -1,9 +1,10 @@
 .project-card {
   background: #3a3e52;
   max-width: 290px;
-  padding: 23px 24px;
+  padding: 26px 23px 24px;
   color: #9ea3b4;
   font-size: 14px;
+  letter-spacing: 0.02em;
   position: relative;
   display: flex;
   margin: 23px 0;
@@ -48,8 +49,8 @@
     &:after {
       display: block;
       content: "";
-      height: 5px;
-      width: 5px;
+      height: 4px;
+      width: 4px;
       background-color: #9ea3b4;
       border-radius: 50%;
       position: absolute;
@@ -61,7 +62,7 @@
   .project-menu {
     height: 30px;
     position: absolute;
-    right: 20px;
+    right: 25px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -69,8 +70,8 @@
     .dot {
       display: block;
       content: "";
-      height: 5px;
-      width: 5px;
+      height: 4px;
+      width: 4px;
       background-color: #9ea3b4;
       border-radius: 50%;
       position: relative;
@@ -79,19 +80,19 @@
       &:after {
         display: block;
         content: "";
-        height: 5px;
-        width: 5px;
+        height: 4px;
+        width: 4px;
         background-color: #9ea3b4;
         border-radius: 50%;
         position: absolute;
       }
 
       &:before {
-        top: 7px;
+        top: 6px;
       }
 
       &:after {
-        bottom: 7px;
+        bottom: 6px;
       }
     }
   }
