@@ -1,12 +1,18 @@
 .inbox {
     background: #3a3e52;
     width: 36%;
-    max-height: 400px;
-    overflow: auto;
+    max-height: 410px;
+    overflow: hidden;
+     
 
     .header-wrap {
         padding: 33px 0;
         text-align: center;
+    }
+
+    .message-wrap {
+        overflow: auto;
+        max-height: 330px;
     }
 
     .h2 {

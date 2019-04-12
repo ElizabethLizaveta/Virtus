@@ -1,8 +1,12 @@
 .project-box {
   background: #3a3e52;
-  max-height: 480px;
+  max-height: 478px;
   overflow: auto;
 
+  @include media("<1500px") {
+    width: 53%;
+  }
+ 
   .header-wrap {
     padding: 33px 0;
     text-align: center;

@@ -1,81 +1,81 @@
 .circle {
-	width: 79px;
-    display: inline-block;
-    position: relative;
+  width: 79px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  margin-right: 24px;
+
+  @include media("<tablet") {
+    margin-right: 0;
+  }
+
+  canvas {
+    width: 79px !important;
+    height: 79px !important;
+  }
+
+  .progress {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
     text-align: center;
-    vertical-align: top;
-    margin-right: 26px;
-
-    @include media("<tablet") {
-        margin-right: 0;
-    }
-
-    canvas {
-        width: 79px!important;
-        height: 79px!important;
-    }
-    
-	.progress {
-		position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-		width: 100%;
-		text-align: center;
-		line-height: 22px;
-        font-size: 22px;
-        color: #2196f3;
-	}
+    line-height: 22px;
+    font-size: 22px;
+    color: #2196f3;
+  }
 }
 
 .circles-holder {
-    position: absolute;
-    top: 35px;
-    left: 35px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  display: flex;
+  color: #2196f3;
+  z-index: 1;
+
+  @include media("<tablet") {
+    top: 5px;
+    left: 5px;
+  }
+
+  .info {
     display: flex;
-    color: #2196f3;
-    z-index: 1;
-  
-    @include media("<tablet") {
-      top: 5px;
-      left: 5px;
+    align-items: center;
+    font-size: 16px;
+    color: #9ca1b2;
+    text-transform: uppercase;
+    margin-right: 82px;
+
+    @include media("<desktop") {
+      margin-right: 40px;
     }
-  
-    .info {
-      display: flex;
+
+    @include media("<tablet") {
+      margin-right: 0px;
+      flex-direction: column;
       align-items: center;
-      font-size: 16px;
-      color: #9ca1b2;
-      text-transform: uppercase;
-      margin-right: 82px;
-  
-      @include media("<desktop") {
-        margin-right: 40px;
-      }
-  
+      min-width: 90px;
+      font-size: 12px;
+    }
+
+    .numbers {
       @include media("<tablet") {
-        margin-right: 0px;
-        flex-direction: column;
-        align-items: center;
-        min-width: 90px;
-        font-size: 12px;
+        margin-top: 10px;
+        text-align: center;
       }
-  
-      .numbers {
+
+      span {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        display: block;
+
         @include media("<tablet") {
-          margin-top: 10px;
-          text-align: center;
-        }
-  
-        span {
-          font-size: 22px;
-          font-weight: 700;
-          color: #fff;
-          display: block;
-  
-          @include media("<tablet") {
-            font-size: 18px;
-          }
+          font-size: 18px;
         }
       }
     }
   }
+}

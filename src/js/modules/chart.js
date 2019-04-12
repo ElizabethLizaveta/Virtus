@@ -3,8 +3,8 @@ import Chart from 'chart.js';
 const chart = (($) => {
   function chartLineInit() {
     const speedCanvas = $('.chartline');
-    const start = speedCanvas.attr('start-point');
-    const end = speedCanvas.attr('end-point');
+    const start = speedCanvas.data('start');
+    const end = speedCanvas.data('end');
 
     Chart.defaults.global.defaultFontFamily = 'Montserrat';
     Chart.defaults.global.defaultFontSize = 16;
