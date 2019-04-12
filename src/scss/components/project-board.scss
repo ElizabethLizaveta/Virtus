@@ -13,6 +13,14 @@
     margin: 220px 15px 30px;
     height: calc(100vh - 230px);
   }
+
+  .project-card {
+    background: #3a3e52;
+    max-width: 290px;
+    padding: 26px 23px 24px;
+    margin: 23px 0;
+    border-radius: 5px;
+  }
 }
 
 .board-inner {

@@ -3,6 +3,8 @@ import Chart from 'chart.js';
 const chart = (($) => {
   function chartLineInit() {
     const speedCanvas = $('.chartline');
+    const start = speedCanvas.attr('start-point');
+    const end = speedCanvas.attr('end-point');
 
     Chart.defaults.global.defaultFontFamily = 'Montserrat';
     Chart.defaults.global.defaultFontSize = 16;
@@ -41,8 +43,8 @@ const chart = (($) => {
             color: '#505464',
           },
           ticks: {
-            min: 'MON',
-            max: 'FRI',
+            min: start,
+            max: end,
           },
           gridLines: {
             offsetGridLines: 'true',

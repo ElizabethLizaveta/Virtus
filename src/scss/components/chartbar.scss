@@ -5,6 +5,10 @@
     position: relative;
     padding: 30px 30px 23px 29px;
 
+    @include media("<desktop") {
+      width: 100%;
+    }
+
     @include media("<tablet") {
         padding: 26px 15px 23px 15px;
     }

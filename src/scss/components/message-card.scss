@@ -4,6 +4,10 @@
     align-items: center;
     background: #2f3242;
 
+    @include media("<widescreen") {
+        padding: 15px 10px 10px 25px;
+    }
+
     .img-wrap {
         margin: 0 15px 10px 0;
         min-width: 45px;
@@ -16,6 +20,10 @@
     .head {
         display: flex;
         justify-content: space-between;
+
+        @include media("<widescreen") {
+            flex-direction: column;
+        }
     }
 
     a {
@@ -49,6 +57,10 @@
         color: #9ca1b2;
         line-height: 28px;
         letter-spacing: 0.03em;
+
+        @include media("<widescreen") {
+            line-height: 16px;
+        }
     } 
 }
 
