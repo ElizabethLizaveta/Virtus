@@ -1,5 +1,6 @@
 .content-board {
-  margin: 160px 15px 22px 160px;
+  margin: 95px 0 0 95px;
+  padding: 66px 15px 22px 60px;
   background: #2b2d3c;
   overflow: visible;
   display: flex;
@@ -10,11 +11,13 @@
   }
 
   @include media("<desktop") {
-    margin: 200px 15px 0;
+    margin: 147px 0 0 0;
+    padding: 40px 15px 22px 15px;
   }
 
   @include media("<tablet") {
-    margin: 170px 15px 0;
+    margin: 126px 0 0 0;
+    padding: 15px;
   }
 }
 
@@ -27,7 +30,7 @@
   @include media("<1500px") {
     width: 100%;
     margin-bottom: 20px;
-  }  
+  }
 }
 
 .right {
@@ -39,6 +42,9 @@
   @include media("<1500px") {
     width: 100%;
     flex-direction: row;
-  } 
-}
+  }
 
+  @include media("<tablet") {
+    flex-direction: column;
+  }
+}

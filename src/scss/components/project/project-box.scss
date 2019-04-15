@@ -1,11 +1,19 @@
-.inbox {
+.project-box {
   background: #3a3e52;
-  width: 36%;
-  max-height: 410px;
+  height: 478px;
   overflow: hidden;
 
+  @include media("<1500px") {
+    width: 53%;
+  }
+
   @include media("<desktop") {
+    height: 390px;
+  }
+
+  @include media("<tablet") {
     width: 100%;
+    margin-bottom: 20px;
   }
 
   .header-wrap {
@@ -17,12 +25,12 @@
     }
   }
 
-  .message-wrap {
+  .project-wrap {
     overflow: auto;
-    max-height: 320px;
+    max-height: 390px;
 
     @include media("<tablet") {
-      max-height: 300px;
+      max-height: 325px;
     }
   }
 
@@ -31,9 +39,14 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 0;
+  }
 
-    span {
-      color: #2196f3;
-    }
+  .project-card {
+    background: #2e3140;
+    padding: 24px 23px;
+  }
+
+  .project-card + .project-card {
+    border-top: 1px solid #505464;
   }
 }

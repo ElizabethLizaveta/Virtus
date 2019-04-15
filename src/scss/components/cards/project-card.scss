@@ -21,7 +21,7 @@
 
   .project-mail {
     color: #9ea3b4;
-    margin-right: 30px;
+    margin-right: 27px;
   }
 
   .project-value {
@@ -36,7 +36,7 @@
       border-radius: 50%;
       position: absolute;
       top: 7px;
-      left: -17px;
+      left: -15px;
     }
   }
 
@@ -85,9 +85,9 @@
 }
 
 .ui-sortable-handle:hover {
-    .project-card {
-        box-shadow: 3px 0 50px rgba(0, 0, 0, 0.2);
-    }
+  .project-card {
+    box-shadow: 3px 0 50px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .sortable-placeholder {

@@ -4,6 +4,16 @@
 
   @include media("<1500px") {
     width: 45%;
+    height: 476px;
+  }
+
+  @include media("<desktop") {
+    height: 390px;
+  }
+
+  @include media("<tablet") {
+    width: 100%;
+    height: auto;
   }
 
   .ui-datepicker {
@@ -11,8 +21,12 @@
     height: 100%;
     background: #2f3242;
     border: none;
-    padding: 128px 33px;
+    padding: 125px 30px 30px 37px;
     position: relative;
+
+    @include media("<tablet") {
+      padding: 90px 30px 30px;
+    }
 
     .ui-corner-all {
       border: radius;
@@ -33,9 +47,14 @@
       font-size: 24px;
       font-weight: 700;
       text-align: center;
-      padding: 23px 10px;
+      padding: 33px 10px;
       display: flex;
+      line-height: 1;
       justify-content: center;
+
+      @include media("<tablet") {
+        padding: 22px;
+      }
     }
 
     .ui-datepicker-year {

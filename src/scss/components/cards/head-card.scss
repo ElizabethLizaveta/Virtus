@@ -1,0 +1,49 @@
+.head-card {
+  min-width: 294px;
+  padding-right: 10px;
+  position: relative;
+  margin-bottom: 38px;
+
+  .h2 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  i {
+    position: absolute;
+    color: #9ea3b4;
+    font-size: 25px;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .project-info {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    display: flex;
+
+    .project-amount {
+      margin-right: 23px;
+      color: #9ea3b4;
+      position: relative;
+
+      &:after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 4px;
+        background-color: #9ea3b4;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        right: -14px;
+      }
+    }
+
+    .project-value {
+      color: #2072b8;
+    }
+  }
+}

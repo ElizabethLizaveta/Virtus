@@ -1,6 +1,6 @@
-.project-bar { 
+.project-bar {
   position: fixed;
-  top: 96px;
+  top: 94px;
   width: 100%;
   padding: 27px 10px 27px 158px;
   display: flex;
@@ -24,6 +24,7 @@
 
     .h2 {
       font-size: 18px;
+      letter-spacing: 0.02em;
       margin-bottom: 0;
 
       @include media("<tablet") {
@@ -32,7 +33,7 @@
 
       &:nth-child(2) {
         color: #fff;
-        margin-left: 47px;
+        margin-left: 43px;
 
         @include media("<tablet") {
           display: none;
@@ -47,8 +48,9 @@
 
     .h3 {
       font-size: 16px;
+      letter-spacing: 0.02em;
       color: #fff;
-      margin-right: 28px;
+      margin-right: 27px;
       margin-bottom: 0;
 
       @include media("<tablet") {
@@ -58,23 +60,28 @@
 
     .styled-select {
       height: 40px;
-      width: 158px;
+      min-width: 158px;
       border: 1px solid #fff;
       border-radius: 50px;
       position: relative;
 
       @include media("<tablet") {
         height: 35px;
-        width: 130px;
+        min-width: 130px;
       }
 
       i {
         position: absolute;
-        top: 8px;
+        top: 50%;
         right: 10px;
+        transform: translateY(-50%);
         font-size: 25px;
         color: #fff;
         pointer-events: none;
+
+        @include media("<tablet") {
+          right: 5px;
+        }
       }
 
       select {
@@ -82,15 +89,20 @@
         color: #eee;
         background: transparent;
         font-size: 16px;
-        padding: 12px 25px;
+        padding: 5px 25px;
         width: 100%;
         height: 100%;
         -webkit-appearance: none;
         outline: none;
         cursor: pointer;
 
+        &:-moz-focusring {
+          color: transparent;
+          text-shadow: 0 0 0 #fff;
+        }
+
         @include media("<tablet") {
-          padding: 0px 20px;
+          padding: 0px 30px 0 15px;
         }
       }
     }

@@ -28,16 +28,19 @@
 }
 
 .circles-holder {
-  position: absolute;
   top: 35px;
-  left: 35px;
+  left: 37px;
+  position: absolute;
   display: flex;
   color: #2196f3;
   z-index: 1;
 
   @include media("<tablet") {
-    top: 5px;
-    left: 5px;
+    margin: 0;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
   }
 
   .info {
@@ -46,14 +49,18 @@
     font-size: 16px;
     color: #9ca1b2;
     text-transform: uppercase;
-    margin-right: 82px;
+    margin-right: 83px;
+
+    @include media("<widescreen") {
+      margin-right: 60px;
+    }
 
     @include media("<desktop") {
       margin-right: 40px;
     }
 
     @include media("<tablet") {
-      margin-right: 0px;
+      margin-right: 5px;
       flex-direction: column;
       align-items: center;
       min-width: 90px;
