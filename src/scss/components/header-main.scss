@@ -142,6 +142,13 @@
     display: flex;
     align-items: center;
 
+    &:hover,
+    &:focus {
+      i {
+        opacity: 0.5;
+      }
+    }
+
     img {
       border-radius: 50%;
 
