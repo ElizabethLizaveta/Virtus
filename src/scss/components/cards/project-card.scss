@@ -40,26 +40,28 @@
     }
   }
 
-  .project-menu {
+  .project-menu-btn {
     height: 30px;
+    width: 30px;
     position: absolute;
-    right: 22px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
 
     &:hover,
     &:focus {
       opacity: 0.5;
     }
 
-    &.dot {
+    .dot {
       display: block;
-      content: "";
       height: 4px;
       width: 4px;
       background-color: #9ea3b4;
       border-radius: 50%;
+      position: relative;
 
       &:before,
       &:after {
@@ -93,5 +95,6 @@
   min-height: inherit;
   width: 100%;
   border-radius: 5px;
-  border: 1px dashed #9ea3b4;
+  border: 1px dashed #4e5160; 
+  background: #2c2f3e;
 }

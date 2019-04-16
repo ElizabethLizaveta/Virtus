@@ -11,6 +11,10 @@
       flex-direction: column;
     }
 
+    @include media("<widescreen") {
+      padding: 40px 15px 22px 25px;
+        }
+
     @include media("<desktop") {
       margin: 147px 0 0 0;
       padding: 40px 15px 22px 15px;

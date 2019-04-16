@@ -3,6 +3,7 @@
   width: 35%;
   max-height: 410px;
   overflow: hidden;
+  box-shadow: 3px 0 80px rgba(0, 0, 0, 0.2);
 
   @include media("<desktop") {
     width: 100%;
