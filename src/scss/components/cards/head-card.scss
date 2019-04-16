@@ -1,20 +1,21 @@
 .head-card {
   min-width: 294px;
-  padding-right: 10px;
+  padding-right: 18px;
   position: relative;
   margin-bottom: 38px;
 
   .h2 {
     color: #fff;
     font-size: 18px;
-    margin-bottom: 4px;
+    letter-spacing: 0.02em;
+    margin-bottom: 3px;
   }
 
   i {
     position: absolute;
     color: #9ea3b4;
     font-size: 25px;
-    right: 18px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -43,7 +44,8 @@
     }
 
     .project-value {
-      color: #2072b8;
+      color: #2196f3;
+      font-weight: 700;
     }
   }
 }

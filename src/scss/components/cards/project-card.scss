@@ -21,7 +21,7 @@
 
   .project-mail {
     color: #9ea3b4;
-    margin-right: 27px;
+    margin-right: 25px;
   }
 
   .project-value {
@@ -43,7 +43,7 @@
   .project-menu {
     height: 30px;
     position: absolute;
-    right: 25px;
+    right: 22px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -53,14 +53,13 @@
       opacity: 0.5;
     }
 
-    .dot {
+    &.dot {
       display: block;
       content: "";
       height: 4px;
       width: 4px;
       background-color: #9ea3b4;
       border-radius: 50%;
-      position: relative;
 
       &:before,
       &:after {

@@ -57,6 +57,23 @@
       }
     }
 
+    .ui-datepicker-current-day {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        background-color: #4d5168;
+        z-index: -1;
+      }
+    }
+
     .ui-datepicker-year {
       display: none;
     }
@@ -161,7 +178,7 @@
             border: none;
             text-align: center;
           }
-
+          
           .ui-datepicker-other-month {
             color: #9ea3b4;
           }
@@ -189,4 +206,4 @@
       }
     }
   }
-}
+} 

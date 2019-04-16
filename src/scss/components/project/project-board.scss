@@ -1,39 +1,39 @@
 .project-board {
-  margin: 188px 0 30px 155px;
-  padding: 55px 15px 22px 0;
+  margin: 188px 0 0 157px;
+  padding: 60px 15px 0 0;
   background: #2b2d3c;
   overflow: visible;
   height: calc(100vh - 218px);
 
   @include media("<desktop") {
-    margin: 218px 15px 30px;
-    padding: 40px 0;
+    margin: 218px 0 0 0;
+    padding: 40px 15px 0;
     height: calc(100vh - 247px);
   }
 
   @include media("<tablet") {
-    margin: 190px 15px 30px;
-    padding: 15px 0;
+    margin-top: 190px;
+    padding: 15px 15px 0;
     height: calc(100vh - 220px);
   }
 
   .project-card {
     background: #3a3e52;
-    max-width: 295px;
-    padding: 27px 25px 24px;
+    max-width: 291px;
+    padding: 26px 24px 23px;
     margin: 23px 0;
     border-radius: 5px;
   }
 }
 
 .board-inner {
-  min-width: 1950px;
   display: flex;
   overflow: auto;
+  height: 100%;
 }
 
 .project-sort {
-  margin-right: 23px;
+  margin-right: 22px;
 }
 
 .ui-sortable {

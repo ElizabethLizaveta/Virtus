@@ -1,11 +1,13 @@
 const headerSearch = (($) => {
-  const searchBtn = $('.search-button');
-  const searchInput = $('.search-field');
+  const search = $('.search');
+  const searchBtn = search.find('.search-button');
+  const searchInput = search.find('.search-field');
+  const STATE_CLASS = 'is-visible';
 
   function inputShow() {
     searchBtn.click(() => {
-      if (!searchInput.hasClass('is-visible')) {
-        searchInput.toggleClass('is-visible');
+      if (!searchInput.hasClass(STATE_CLASS)) {
+        searchInput.toggleClass(STATE_CLASS);
       }
     });
   }
@@ -13,7 +15,7 @@ const headerSearch = (($) => {
   function inputHide() {
     $(document).mouseup((e) => {
       if (!searchInput.is(e.target)) {
-        searchInput.removeClass('is-visible');
+        searchInput.removeClass(STATE_CLASS);
         searchInput.val('');
       }
     });

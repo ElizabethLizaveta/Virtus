@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 18px 8px 20px 28px;
+  padding: 19px 20px 21px 28px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@
     align-items: center;
 
     li + li {
-      margin-left: 47px;
+      margin-left: 46px;
       display: flex;
       align-items: center;
 
@@ -46,9 +46,9 @@
   }
 
   .add-button {
-    padding: 15px 60px 15px 30px;
+    padding: 14px 60px 15px 32px;
     font-size: 18px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.09em;
     color: #fff;
     border: 1px solid #2196f3;
     border-radius: 50px;
@@ -74,14 +74,14 @@
       color: #2196f3;
       text-indent: 0;
       position: absolute;
-      right: 15px;
+      right: 16px;
       top: 50%;
       transform: translateY(-50%);
 
       @include media("<tablet") {
         font-size: 20px;
         margin-left: 0;
-        right: 4px;
+        right: 2px;
       }
     }
   }
@@ -104,8 +104,9 @@
 
   .search-button,
   .notify-button {
+    margin-top: 6px;
     color: #fff;
-    font-size: 35px;
+    font-size: 37px;
 
     &:hover,
     &:focus {
@@ -130,8 +131,8 @@
         border: 2px solid #2f3242;
         border-radius: 50%;
         position: absolute;
-        top: 0;
-        right: 5px;
+        top: 2px;
+        right: 3px;
         opacity: 1;
       }
     }
@@ -151,8 +152,9 @@
 
     .switch-button {
       color: #fff;
-      font-size: 20px;
-      margin-left: 9px;
+      font-size: 23px;
+      margin-left: 5px;
+      margin-top: 2px;
 
       &:hover,
       &:focus {

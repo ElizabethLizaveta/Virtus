@@ -1,9 +1,9 @@
 .chartbar-field {
   background: #2f3242;
-  width: 62%;
+  width: 63%;
   overflow: hidden;
   position: relative;
-  padding: 30px 30px 23px 29px;
+  padding: 30px 34px 23px 29px;
 
   @include media("<desktop") {
     width: 100%;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 62px;
+    margin: 0 0 45px 6px;
 
     .h2 {
       font-size: 24px;
@@ -78,11 +78,6 @@
           -webkit-appearance: none;
           outline: none;
           cursor: pointer;
-
-          &:-moz-focusring {
-            color: transparent;
-            text-shadow: 0 0 0 #9ea3b4;
-          }
 
           @include media("<tablet") {
             padding: 0px 20px;

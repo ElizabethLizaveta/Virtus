@@ -107,8 +107,11 @@ const chart = (($) => {
   }
 
   const init = () => {
-    chartLineInit();
-    chartBarInit();
+    if ($('.chartline').length) {
+      chartLineInit();
+    } if ($('.chartbar').length) {
+      chartBarInit();
+    }
   };
 
   return { init };
